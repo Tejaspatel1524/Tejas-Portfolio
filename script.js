@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initAINetworkCanvas();
   initISTClock();
   initCodeArchitectureTabs();
+  initFAQAccordion();
 });
 
 /* ============================================
@@ -977,5 +978,41 @@ app = FastAPI(title=<span class="c-str">"JARVIS Desktop Core"</span>)
     });
   });
 }
+
+/* ============================================
+   FAQ ACCORDION INTERACTION
+   ============================================ */
+function initFAQAccordion() {
+  const faqItems = document.querySelectorAll('.faq-item');
+  if (!faqItems.length) return;
+
+  faqItems.forEach(item => {
+    const questionBtn = item.querySelector('.faq-question');
+    if (!questionBtn) return;
+
+    questionBtn.addEventListener('click', () => {
+      const isActive = item.classList.contains('active');
+
+      // Close all other items for a clean single-open accordion feel
+      faqItems.forEach(otherItem => {
+        if (otherItem !== item) {
+          otherItem.classList.remove('active');
+          const otherBtn = otherItem.querySelector('.faq-question');
+          if (otherBtn) otherBtn.setAttribute('aria-expanded', 'false');
+        }
+      });
+
+      // Toggle current item
+      if (isActive) {
+        item.classList.remove('active');
+        questionBtn.setAttribute('aria-expanded', 'false');
+      } else {
+        item.classList.add('active');
+        questionBtn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+}
+
 
 
