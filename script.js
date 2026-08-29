@@ -344,128 +344,125 @@ document.head.appendChild(style);
    PROJECT DETAILS MODAL LOGIC
    ============================================ */
 const projectDetails = {
+  nexusbiz: {
+    title: "NexusBiz",
+    tagline: "AI Product Descriptions & CSV Business Analytics",
+    badge: "Full-Stack + AI",
+    icon: "📈",
+    desc: "A full-stack web application I built for small businesses to generate marketing copy and analyze sales CSV spreadsheets with interactive visual charts without needing complicated analytics tools.",
+    arch: ["React 19 Frontend", "FastAPI Backend", "OpenAI GPT API", "CSV Data Parser", "Recharts Dashboard"],
+    features: [
+      "Generates marketing copy with customizable tone, length, and style",
+      "Upload CSV sales spreadsheets and instantly get interactive visual charts",
+      "Built with React 19, FastAPI, and Tailwind CSS for snappy performance",
+      "One-click CSV analytics and sales trend insights"
+    ],
+    tech: ["React 19", "FastAPI", "OpenAI API", "Tailwind CSS", "Chart.js", "Python"],
+    github: "https://github.com/Tejaspatel1524",
+    demo: "https://nexusbiz.vercel.app"
+  },
+  sentinelai: {
+    title: "SentinelAI / CrimeGPT",
+    tagline: "Cyber Fraud Investigation Dashboard & Entity Graph",
+    badge: "Enterprise Platform",
+    icon: "🛡️",
+    desc: "An investigation platform UI I designed for cyber fraud casework. It lets investigators organize suspect cases, map out connected bank accounts and phone numbers using interactive flow graphs, and generate printable reports.",
+    arch: ["React 19 SPA", "Dashboard Analytics", "Case Directory", "ReactFlow Entity Graph", "Report Engine"],
+    features: [
+      "Case management tracking total cases, priority levels, and open financial investigations",
+      "Interactive node-based entity mapping to connect suspects, bank accounts, and phone numbers",
+      "Indian Rupee currency formatting and clean forensic summary cards",
+      "Printable investigation summary report generator",
+      "Dark-themed responsive UI styled with Tailwind CSS and Radix UI primitives"
+    ],
+    tech: ["React 19", "TypeScript", "Vite", "Tailwind CSS", "ReactFlow", "Recharts", "Radix UI"],
+    github: "https://github.com/Tejaspatel1524",
+    demo: "https://crime-gpt-seven.vercel.app"
+  },
+  custbook: {
+    title: "CustBook",
+    tagline: "Smart Customer & Ledger Manager for Local Shopkeepers",
+    badge: "PWA / Offline",
+    icon: "📒",
+    desc: "A lightweight Progressive Web App I developed for small retail shopkeepers to replace paper khata books. It lets shop owners record customer transactions, track unpaid dues, and share digital receipts on WhatsApp — all running 100% offline.",
+    arch: ["Vanilla HTML5 / CSS3", "Vanilla JS App Core", "Browser localStorage", "Service Worker PWA", "Web Share API"],
+    features: [
+      "Works 100% offline with browser localStorage — zero internet needed",
+      "One-tap WhatsApp digital receipt sharing with shop name and details",
+      "Customer directory search, payment status tracking (Paid, Pending, Partial)",
+      "PIN-protected store access and installable on Android / iOS devices"
+    ],
+    tech: ["HTML5", "CSS3 Custom Properties", "Vanilla JavaScript", "PWA Service Worker", "Web Share API"],
+    github: "https://github.com/Tejaspatel1524",
+    demo: "https://custbook.online"
+  },
   gesturetalk: {
     title: "GestureTalk",
-    tagline: "Real-time ASL Sign Language to Speech Communication Engine",
+    tagline: "Real-Time Sign Language to Speech Translation",
     badge: "AI + Accessibility",
     icon: "🤟",
-    desc: "GestureTalk is an accessibility-focused AI tool that bridges communication gaps for the speech and hearing-impaired community. It uses computer vision to track 21 hand landmark points in real time and classifies American Sign Language (ASL) gestures with ~90% accuracy, rendering instant text and audio output across 8 global languages.",
+    desc: "An accessibility tool I built to bridge communication gaps for the speech-impaired community. Using webcam video and MediaPipe hand tracking (21 landmarks), it recognizes American Sign Language gestures and speaks them aloud in 8 languages with ~90% accuracy.",
     arch: ["Webcam Feed", "MediaPipe Hands", "21 Landmark Detection", "Rule Classifier", "Web Speech API", "PWA / Electron"],
     features: [
       "Real-time A-Z alphabet and 0-9 number gesture recognition (~90% accuracy)",
       "Multilingual Text-to-Speech synthesis in 8 languages (English, Hindi, Spanish, French, German, Japanese, Chinese, Arabic)",
-      "Interactive ASL Practice Mode with live accuracy score feedback",
-      "PWA offline support & desktop app wrapper with native Windows installer (Electron + NSIS)",
-      "4 visual themes (Dark Blue, Purple Night, Matrix Green, Neon Pink) with audio haptic feedback"
+      "Interactive ASL Practice Mode with live accuracy feedback",
+      "Works as an installable PWA and a native Windows desktop app via Electron",
+      "4 color themes with audio feedback"
     ],
-    tech: ["MediaPipe Hands", "Web Speech API", "Electron 29", "PWA (Service Workers)", "Vanilla JS", "Python PPTX"],
+    tech: ["MediaPipe Hands", "Web Speech API", "Electron", "PWA", "Vanilla JS"],
     github: "https://github.com/Tejaspatel1524",
     demo: null
   },
   jarvis: {
     title: "J.A.R.V.I.S",
-    tagline: "Just A Rather Very Intelligent System — Desktop Voice AI",
-    badge: "AI Assistant",
+    tagline: "Desktop Voice Assistant with HUD Interface",
+    badge: "Desktop Voice AI",
     icon: "🎙️",
-    desc: "Inspired by Tony Stark's iconic AI, J.A.R.V.I.S is a full-featured desktop voice assistant with system tray controls, wake-word activation, and frameless HUD interface. It connects to OpenAI/Groq streaming LLMs and uses agentic tool-calling to execute system commands safely via a security whitelist.",
-    arch: ["Wake Word Detector", "Speech-to-Text", "FastAPI Engine", "Groq / OpenAI LLM", "Tool Executor", "pywebview HUD"],
+    desc: "A desktop voice assistant I built in Python inspired by Iron Man. It runs in the Windows system tray, listens for a 'Hey Jarvis' wake word, and opens a sleek HUD window to answer questions, monitor system stats, and run safe whitelisted commands.",
+    arch: ["Wake Word Detector", "Speech-to-Text", "FastAPI Engine", "OpenAI / Groq LLM", "Tool Executor", "pywebview HUD"],
     features: [
-      "Hands-free wake-word detection ('Hey Jarvis') popping open a frameless glassmorphism HUD",
-      "Agentic tool calling: open applications, search the web, run whitelisted shell commands, and read system diagnostics",
-      "Streaming voice & text responses with automatic exponential backoff retry mechanisms",
-      "Token-safe conversation memory trimming to preserve context without hitting token limits",
-      "System tray background service with global hotkey (Ctrl+Shift+J)"
+      "Hands-free wake-word detection ('Hey Jarvis') that opens a frameless HUD",
+      "Tool calling to launch apps, search the web, and check CPU/RAM stats",
+      "Streaming audio and text responses with error retry mechanisms",
+      "Runs quietly in the background Windows system tray with shortcut keys"
     ],
-    tech: ["Python 3.11", "FastAPI", "AsyncOpenAI / Groq API", "pywebview", "pystray", "psutil", "WebSockets"],
+    tech: ["Python 3.11", "FastAPI", "Groq / OpenAI API", "pywebview", "pystray", "psutil", "WebSockets"],
     github: "https://github.com/Tejaspatel1524",
     demo: null
-  },
-  sentinelai: {
-    title: "SentinelAI / CrimeGPT",
-    tagline: "Cyber Fraud Investigation Intelligence Platform",
-    badge: "Enterprise Platform",
-    icon: "🛡️",
-    desc: "SentinelAI (CrimeGPT) is a specialized digital forensics and investigation platform engineered for Indian law enforcement agencies and cyber defense teams. It organizes complex financial fraud cases, parses digital evidence, maps suspect entity networks using flow diagrams, and generates official investigation reports.",
-    arch: ["React 19 SPA", "Dashboard Analytics", "Case Directory", "ReactFlow Entity Graph", "Report Engine"],
-    features: [
-      "Comprehensive case management tracking total cases, priority levels, and open financial fraud investigations",
-      "Interactive node-based entity mapping (@xyflow/react) to visually connect suspects, bank accounts, and phone numbers",
-      "INR currency formatting and Indian law enforcement regulatory compliance formatting",
-      "Detailed 76KB forensic report generator producing official case timelines and evidence manifests",
-      "Dark-themed investigation workspace styled with Tailwind CSS 4 and Radix UI primitives"
-    ],
-    tech: ["React 19", "TypeScript 6", "Vite 8", "Tailwind CSS 4", "@xyflow/react", "Recharts", "Radix UI"],
-    github: "https://github.com/Tejaspatel1524",
-    demo: "https://crime-gpt-seven.vercel.app"
   },
   income: {
     title: "Income Smoothing Platform",
-    tagline: "AI-Driven Financial Stability Platform for Gig Workers",
-    badge: "FinTech SaaS",
+    tagline: "Financial Predictor & Savings Buffer for Freelancers",
+    badge: "FinTech Web App",
     icon: "💰",
-    desc: "A fintech SaaS platform designed for freelancers and gig workers with irregular income streams. The custom AI prediction engine calculates earnings variability, sets automated savings buffer targets, and schedules predictable monthly income payouts to guarantee financial peace of mind.",
-    arch: ["React 18 Frontend", "Express 4 Backend", "AI Predictor Engine", "Smoothing Engine", "PostgreSQL DB", "JWT Auth"],
+    desc: "A full-stack fintech concept app I built to help gig workers and freelancers deal with irregular income. It predicts future cashflow variability, suggests automated buffer savings targets, and provides steady payout calculations.",
+    arch: ["React Frontend", "Express Backend", "Income Predictor Logic", "PostgreSQL DB", "JWT Auth"],
     features: [
-      "Custom AI Income Predictor analyzing historical payment data to forecast future earnings",
-      "Automated Financial Buffer Engine determining safe payout amounts to smooth out irregular income spikes and drops",
-      "Behavioral Nudge Engine delivering personalized micro-financial tips and lessons",
-      "Security-hardened backend featuring Helmet security headers, rate-limiting, and PostgreSQL transaction logging",
-      "Calm, trust-first UI design system built with custom Tailwind CSS tokens and Inter typography"
+      "Income predictor analyzing payment history to forecast future months",
+      "Smart buffer savings calculator to handle income fluctuations",
+      "Interactive cashflow analytics and balance tracking charts",
+      "Practical budgeting nudges and financial health tips"
     ],
-    tech: ["React 18", "Node.js 18", "Express 4", "PostgreSQL", "Tailwind CSS 3", "JWT Auth", "Winston Logger"],
+    tech: ["React", "Node.js", "Express", "PostgreSQL", "Tailwind CSS", "Recharts"],
     github: "https://github.com/Tejaspatel1524",
     demo: null
   },
-  nexusbiz: {
-    title: "NexusBiz (AI Business Automation)",
-    tagline: "AI Marketing Copy Generator & CSV Analytics Engine",
-    badge: "AI Business",
-    icon: "📈",
-    desc: "An all-in-one AI platform that turns raw product details into high-converting, SEO-optimized marketing copy, while allowing business owners to upload CSV metrics to receive automated business insights and interactive charts.",
-    arch: ["React 19 Frontend", "Express Backend", "OpenAI GPT Engine", "CSV Multer Parser", "Recharts Dashboard"],
-    features: [
-      "Instant SEO marketing description generator tailoring tone, length, and call-to-action",
-      "CSV dataset upload engine converting raw sales spreadsheet rows into actionable strategic insights",
-      "Interactive data visualization charts powered by Recharts",
-      "One-click batch execution startup via custom Windows scripts"
-    ],
-    tech: ["React 19", "Vite 7", "Node.js", "Express 4", "OpenAI API", "Recharts", "Multer"],
-    github: "https://github.com/Tejaspatel1524",
-    demo: "https://nexus-biz.vercel.app"
-  },
   aibusiness: {
-    title: "NexusBiz (AI Business Automation)",
-    tagline: "AI Marketing Copy Generator & CSV Analytics Engine",
-    badge: "AI Business",
+    title: "NexusBiz",
+    tagline: "AI Product Descriptions & CSV Business Analytics",
+    badge: "Full-Stack + AI",
     icon: "📈",
-    desc: "An all-in-one AI platform that turns raw product details into high-converting, SEO-optimized marketing copy, while allowing business owners to upload CSV metrics to receive automated business insights and interactive charts.",
-    arch: ["React 19 Frontend", "Express Backend", "OpenAI GPT Engine", "CSV Multer Parser", "Recharts Dashboard"],
+    desc: "A full-stack web application I built for small businesses to generate marketing copy and analyze sales CSV spreadsheets with interactive visual charts.",
+    arch: ["React 19 Frontend", "FastAPI Backend", "OpenAI GPT API", "CSV Data Parser", "Recharts Dashboard"],
     features: [
-      "Instant SEO marketing description generator tailoring tone, length, and call-to-action",
-      "CSV dataset upload engine converting raw sales spreadsheet rows into actionable strategic insights",
-      "Interactive data visualization charts powered by Recharts",
-      "One-click batch execution startup via custom Windows scripts"
+      "Generates marketing copy with customizable tone, length, and style",
+      "Upload CSV sales spreadsheets and instantly get interactive visual charts",
+      "Built with React 19, FastAPI, and Tailwind CSS for snappy performance"
     ],
-    tech: ["React 19", "Vite 7", "Node.js", "Express 4", "OpenAI API", "Recharts", "Multer"],
+    tech: ["React 19", "FastAPI", "OpenAI API", "Tailwind CSS", "Chart.js"],
     github: "https://github.com/Tejaspatel1524",
-    demo: "https://nexus-biz.vercel.app"
-  },
-  custbook: {
-    title: "CustBook (ShopBase)",
-    tagline: "Smart Mobile Customer Manager for Retail Shopkeepers",
-    badge: "PWA",
-    icon: "📒",
-    desc: "CustBook is a lightweight Progressive Web App tailored for small retail shopkeepers to replace traditional paper khata books. It allows business owners to record customer transactions, manage pending payments, and generate digital receipts instantly.",
-    arch: ["Vanilla HTML5 / CSS3", "Vanilla JS App Core", "Browser localStorage", "Service Worker PWA", "Web Share API"],
-    features: [
-      "Complete offline capability powered by browser localStorage — zero internet connection required",
-      "One-tap WhatsApp digital receipt sharing with shop branding and GST details",
-      "Customer directory search, payment status tracking (Paid, Pending, Partial), and debt collection reminders",
-      "PIN-protected store access and installable app manifest for iOS and Android"
-    ],
-    tech: ["HTML5", "CSS3 Custom Properties", "Vanilla JavaScript", "PWA Service Worker", "Web Share API"],
-    github: "https://github.com/Tejaspatel1524",
-    demo: "https://custbook.online"
+    demo: "https://nexusbiz.vercel.app"
   }
 };
 
@@ -487,64 +484,41 @@ function initProjectModal() {
       const data = projectDetails[pId];
       if (!data) return;
 
-      document.getElementById('modalIcon').textContent = data.icon;
-      document.getElementById('modalBadge').textContent = data.badge;
-      document.getElementById('modalTitle').textContent = data.title;
-      document.getElementById('modalTagline').textContent = data.tagline;
-      document.getElementById('modalDesc').textContent = data.desc;
+      document.getElementById('modalProjectIcon').textContent = data.icon;
+      document.getElementById('modalProjectBadge').textContent = data.badge;
+      document.getElementById('modalProjectTitle').textContent = data.title;
+      document.getElementById('modalProjectTagline').textContent = data.tagline;
+      document.getElementById('modalProjectDesc').textContent = data.desc;
 
-      // Architecture
-      const archContainer = document.getElementById('modalArch');
-      archContainer.innerHTML = '';
-      data.arch.forEach((step, idx) => {
-        const stepEl = document.createElement('span');
-        stepEl.className = 'arch-step';
-        stepEl.textContent = step;
-        archContainer.appendChild(stepEl);
-
-        if (idx < data.arch.length - 1) {
-          const arrow = document.createElement('span');
-          arrow.className = 'arch-arrow';
-          arrow.textContent = '→';
-          archContainer.appendChild(arrow);
-        }
-      });
+      // Architecture flow
+      const archContainer = document.getElementById('modalProjectArch');
+      archContainer.innerHTML = data.arch.map(step => `
+        <div class="arch-step">
+          <span class="arch-step-dot"></span>
+          <span>${step}</span>
+        </div>
+      `).join('');
 
       // Features
-      const featContainer = document.getElementById('modalFeatures');
-      featContainer.innerHTML = '';
-      data.features.forEach(feat => {
-        const li = document.createElement('li');
-        li.className = 'modal-feature-item';
-        li.textContent = feat;
-        featContainer.appendChild(li);
-      });
+      const featContainer = document.getElementById('modalProjectFeatures');
+      featContainer.innerHTML = data.features.map(feat => `<li>${feat}</li>`).join('');
 
       // Tech Stack
-      const techContainer = document.getElementById('modalTech');
-      techContainer.innerHTML = '';
-      data.tech.forEach(t => {
-        const tag = document.createElement('span');
-        tag.className = 'project-tech-tag';
-        tag.textContent = t;
-        techContainer.appendChild(tag);
-      });
+      const techContainer = document.getElementById('modalProjectTech');
+      techContainer.innerHTML = data.tech.map(t => `<span class="project-tech-tag">${t}</span>`).join('');
 
-      // Links
-      const sourceBtn = document.getElementById('modalSourceBtn');
-      const demoBtn = document.getElementById('modalDemoBtn');
-
-      if (sourceBtn) sourceBtn.href = data.github || 'https://github.com/Tejaspatel1524';
-      if (demoBtn) {
-        if (data.demo) {
-          demoBtn.style.display = 'inline-flex';
-          demoBtn.href = data.demo;
-        } else {
-          demoBtn.style.display = 'none';
-        }
+      // Live links
+      const liveBtn = document.getElementById('modalLiveBtn');
+      if (data.demo) {
+        liveBtn.href = data.demo;
+        liveBtn.style.display = 'inline-flex';
+      } else {
+        liveBtn.style.display = 'none';
       }
 
-      // Show modal
+      document.getElementById('modalGithubBtn').href = data.github;
+
+      // Open modal
       backdrop.classList.add('active');
       document.body.style.overflow = 'hidden';
     });
@@ -600,14 +574,14 @@ function initThemeSwitcher() {
    TYPEWRITER SUBTITLE EFFECT
    ============================================ */
 function initTypewriter() {
-  const target = document.getElementById('typedSubtitle');
+  const target = document.getElementById('typedSubtitle') || document.getElementById('heroRoleTyped');
   if (!target) return;
 
   const phrases = [
-    "AI & Full-Stack Developer",
-    "Multi-Agent AI Engineer",
-    "Accessibility Tech Advocate",
-    "Cyber Intelligence Developer"
+    "3rd Year B.Tech IT Student",
+    "Full-Stack Web Developer",
+    "AI & Computer Vision Enthusiast",
+    "Passionate Software Builder"
   ];
 
   let phraseIdx = 0;
