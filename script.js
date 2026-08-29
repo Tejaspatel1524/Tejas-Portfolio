@@ -578,7 +578,7 @@ function initTypewriter() {
   if (!target) return;
 
   const phrases = [
-    "3rd Year B.Tech IT Student",
+    "Computer Engineering (2024 — 2028)",
     "Full-Stack Web Developer",
     "AI & Computer Vision Enthusiast",
     "Passionate Software Builder"
