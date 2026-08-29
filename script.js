@@ -397,24 +397,6 @@ const projectDetails = {
     github: "https://github.com/Tejaspatel1524",
     demo: "https://crime-gpt-seven.vercel.app"
   },
-  simplifai: {
-    title: "SimplifAI (Jira Ticket Evaluator)",
-    tagline: "Multi-Agent AI PR Compliance & Quality Evaluator",
-    badge: "DevOps AI",
-    icon: "🔍",
-    desc: "SimplifAI automates pull request code reviews by verifying whether GitHub PR code changes satisfy requirements specified in linked Jira tickets. Built on LangGraph multi-agent orchestration, it breaks evaluation down into discrete stages: requirement extraction, code parsing, compliance checking, auto test generation, and verdict synthesis.",
-    arch: ["GitHub Webhook / CLI", "Jira Requirement Extractor", "Code Analyzer", "Compliance Engine", "Test Generator", "Rich / Streamlit Output"],
-    features: [
-      "Multi-stage LangGraph AI pipeline with confidence scores and evidence pointers (file paths & line numbers)",
-      "Automated test case generation for missing requirements using Google Gemini / OpenAI / Anthropic models",
-      "Triple interface support: Beautiful Rich CLI terminal tables, Streamlit web dashboard, and FastAPI REST API",
-      "GitHub Webhook auto-trigger evaluating incoming PRs on push",
-      "JSON evaluation report export with detailed Pass / Partial / Fail verdicts"
-    ],
-    tech: ["Python", "LangGraph", "LangChain", "Google Gemini API", "FastAPI", "Streamlit", "Rich CLI", "Pydantic"],
-    github: "https://github.com/Tejaspatel1524",
-    demo: null
-  },
   income: {
     title: "Income Smoothing Platform",
     tagline: "AI-Driven Financial Stability Platform for Gig Workers",
@@ -433,11 +415,28 @@ const projectDetails = {
     github: "https://github.com/Tejaspatel1524",
     demo: null
   },
+  nexusbiz: {
+    title: "NexusBiz (AI Business Automation)",
+    tagline: "AI Marketing Copy Generator & CSV Analytics Engine",
+    badge: "AI Business",
+    icon: "📈",
+    desc: "An all-in-one AI platform that turns raw product details into high-converting, SEO-optimized marketing copy, while allowing business owners to upload CSV metrics to receive automated business insights and interactive charts.",
+    arch: ["React 19 Frontend", "Express Backend", "OpenAI GPT Engine", "CSV Multer Parser", "Recharts Dashboard"],
+    features: [
+      "Instant SEO marketing description generator tailoring tone, length, and call-to-action",
+      "CSV dataset upload engine converting raw sales spreadsheet rows into actionable strategic insights",
+      "Interactive data visualization charts powered by Recharts",
+      "One-click batch execution startup via custom Windows scripts"
+    ],
+    tech: ["React 19", "Vite 7", "Node.js", "Express 4", "OpenAI API", "Recharts", "Multer"],
+    github: "https://github.com/Tejaspatel1524",
+    demo: "https://nexus-biz.vercel.app"
+  },
   aibusiness: {
     title: "NexusBiz (AI Business Automation)",
     tagline: "AI Marketing Copy Generator & CSV Analytics Engine",
     badge: "AI Business",
-    icon: "📝",
+    icon: "📈",
     desc: "An all-in-one AI platform that turns raw product details into high-converting, SEO-optimized marketing copy, while allowing business owners to upload CSV metrics to receive automated business insights and interactive charts.",
     arch: ["React 19 Frontend", "Express Backend", "OpenAI GPT Engine", "CSV Multer Parser", "Recharts Dashboard"],
     features: [
@@ -466,39 +465,6 @@ const projectDetails = {
     tech: ["HTML5", "CSS3 Custom Properties", "Vanilla JavaScript", "PWA Service Worker", "Web Share API"],
     github: "https://github.com/Tejaspatel1524",
     demo: "https://custbook.online"
-  },
-  uipro: {
-    title: "UI/UX Pro Max",
-    tagline: "Design Intelligence Skill for AI Coding Assistants",
-    badge: "Open Source",
-    icon: "🎨",
-    desc: "UI/UX Pro Max is an open-source design intelligence skill that equips AI coding assistants (Cursor, Claude, Copilot) with 67 UI design styles, 161 color palettes, 57 font pairings, and industry-specific design rules.",
-    arch: ["BM25 Search Engine", "Style Database (CSV)", "Color Palette Engine", "Font Pairing Matrix", "npm CLI"],
-    features: [
-      "BM25 Python search algorithm finding optimal UI styles and palettes in <10ms",
-      "Automated reasoning system selecting appropriate typography and design systems per industry brief",
-      "Used across 18+ AI coding platforms including Claude Desktop, Cursor IDE, and GitHub Copilot",
-      "Published npm CLI package (`npx ui-ux-pro-max`) with instant design system retrieval"
-    ],
-    tech: ["Python 3.10", "BM25 Search", "Node.js CLI", "CSV Data Engine", "npm Registry"],
-    github: "https://github.com/Tejaspatel1524/ui-ux-pro-max",
-    demo: "https://www.npmjs.com/package/ui-ux-pro-max"
-  },
-  uipro: {
-    title: "UI/UX Pro Max",
-    tagline: "Design Intelligence Plugin for AI Coding Assistants",
-    badge: "Open Source",
-    icon: "🎨",
-    desc: "UI/UX Pro Max is an open-source AI skill that equips AI coding assistants (Claude, Cursor, Copilot, Antigravity) with professional design system intelligence. It analyzes application requirements and generates production-ready UI styles, font pairings, and color palettes.",
-    arch: ["npm CLI Installer", "Python BM25 Search", "161 Industry CSV Rules", "Design System Generator"],
-    features: [
-      "67 UI aesthetic styles (Glassmorphism, Claymorphism, Bento Grid, Neumorphism, AI-Native UI)",
-      "161 product-tailored color palettes and 57 Google Fonts typography pairings",
-      "161 industry-specific reasoning rules for SaaS, FinTech, Healthcare, E-Commerce, and Cyber Security",
-      "CLI package (`uipro-cli`) supporting 18+ AI coding assistant environments"
-    ],
-    tech: ["Python 3.x", "Node.js CLI", "BM25 Ranking", "CSV Databases", "npm Package"],
-    github: "https://github.com/Tejaspatel1524"
   }
 };
 
